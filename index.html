@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./icon.png" />
+    <link rel="favicon" href="./icon.png">
+    <title>단어 학습 : Wemory 웨모리</title>
+</head>
+<body>
+    <nav>
+        <a href="./">
+            <img id="logo" src="./logo2.png">
+        </a>
+        <div id="search">
+            <input type="text" id="search-keyword" placeholder="세트 및 단어 / 뜻 검색">
+        </div>
+        <a href="./open-source-licences.html" target="_blank">
+            <button id="open-source-licences">오픈소스 라이선스</button>
+        </a>
+    </nav>
+    <div id="main">
+        <p id="search-result-title">''의 검색 결과</p>
+        <div id="loading-screen">
+            <p>Loading</p>
+            <div id="loading-circle"></div>
+        </div>
+        <div id="set-box">
+            <p id="subtitle">세트</p>
+            <div>
+            </div>
+        </div>
+        <div id="word-box">
+            <p id="subtitle">단어</p>
+            <div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom-nav">
+        <p>Word Memory : Wemory (웨모리) Made By Giwon</p>
+    </div>
+</body>
+<template id="--word-set">
+    <a href="">
+        <div id="word-set" class="container">
+            <p id="date">Updated on 2023-03-18</p>
+            <p id="count">40단어</p>
+            <p id="title">Day 1</p>
+        </div>
+    </a>
+</template>
+<template id="--word">
+    <div id="word" class="container">
+        <p id="english">abandon</p>
+        <p id="korean">그만두다</p>
+    </div>
+</template>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="module" src="./script.js"></script>
+</html>

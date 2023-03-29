@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="../icon.png" />
+    <link rel="favicon" href="../icon.png">
+    <title>단어 학습 : Wemory 웨모리</title>
+</head>
+<body>
+    <nav>
+        <a href="./..">
+            <img id="logo" src="../logo2.png">
+        </a>
+        <div id="info">
+            <p id="set-name">Loading</p>
+            <a id="exit-link" href="../">
+                <div id="exit">학습종료</div>
+            </a>
+        </div>
+        <a href="./open-source-licences.html" target="_blank">
+            <button id="open-source-licences">오픈소스 라이선스</button>
+        </a>
+    </nav>
+    <div id="main">
+        <div id="loading-screen">
+            <p>Loading</p>
+            <div id="loading-circle"></div>
+        </div>
+        <div id="playground">
+            <div style="text-align: center;">
+                <p id="show">단어 출력될 부분</p>
+                <p id="hint">여길 눌러서 정답 보기</p>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 100px;">
+                <p id="icon">></p>
+                <input type="text" id="user-input">
+            </div>
+        </div>
+    </div>
+    <div id="bottom-nav">
+        <p>Word Memory : Wemory (웨모리) Made By Giwon</p>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="module" src="./script.js"></script>
+</html>
